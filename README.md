@@ -22,8 +22,8 @@ All entries must adhere to the following JSON schema:
     "date":
     {
       "type": "string",
-      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
-      "description": "ISO 8601 formatted date and time the tournament is scheduled for"
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}$"
+      "description": "ISO 8601 formatted UTC date and time the tournament is scheduled for"
     },
 
     "mode":
