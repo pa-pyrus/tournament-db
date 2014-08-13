@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "BRN social tournament 3 – the 2v2 edition!",
+  "description": "A casual 2v2 tournament hosted by Team Burning",
+  "type": "object",
+
+  "properties":
+  {
+    "title":
+    {
+      "type": "string",
+      "description": "BRN social tournament 3 – the 2v2 edition!"
+    },
+
+    "date":
+    {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}$"
+      "description": "2014-08-16T09:30:00"
+    },
+
+    "mode":
+    {
+      "type": "string",
+      "description": "2v2 round robin or single elimination or some wacky combination of both"
+    },
+
+    "url":
+    {
+      "type": "string",
+      "description": "https://forums.uberent.com/threads/brn-social-tournament-3-%E2%80%93-the-2v2-edition-16-aug.62861/"
+    }
+
+    "winner":
+    {
+      "oneOf": 
+      [
+        {"type": "null"},
+        {"type": "string"}
+      ]
+      "description": "null"
+    }
+  },
+
+  "required": ["title", "date", "mode", "url", "winner"]
+}
